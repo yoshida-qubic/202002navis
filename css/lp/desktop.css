@@ -1,0 +1,197 @@
+
+/* @media screen and (min-width:1440px) {} */
+/* @media screen and (min-width:1280px) and ( max-width:1439px) {} */
+/* @media screen and (min-width:768px) and ( max-width:1279px) {} */
+/* @media screen and (min-width:1026px) and ( max-width:1279px) {} */
+/* @media screen and (min-width:768px) and ( max-width:1025px) {} */
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ベース設定 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+html{
+	color: #000;
+	font-size: 16px;
+	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
+	/*font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
+	/*font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
+	line-height: 1.8;
+}
+a{
+	color: #000;
+	display: block;
+}
+#wrapper{
+	width: 100%;
+	height: auto;
+}
+section,
+.section{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+@media screen and (min-width:1640px) {
+	.container{max-width: 1480px;}
+}
+@media screen and (min-width:1280px) and ( max-width:1539px) {
+	html{font-size: 15px;}
+	.container{max-width: 1280px;}
+}
+@media screen and (min-width:768px) and ( max-width:1279px) {
+	html{font-size: 14px;}
+	.container{max-width: none;}
+}
+.is_sp{display: none;}
+.is_tab{display: none;}
+@media screen and (min-width:751px) and ( max-width:1025px) {
+	.is_hidden_tab{display: none;}
+	.is_tab{display: block;}
+} 
+:root{
+	--pink_d: #ee3970;
+	--pink_o: rgba(246,68,127,0.9);
+	--pink_l: #ffb7cf;
+}
+.objectCover {
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%; 
+	font-family: 'object-fit: cover;object-position: 50% 50%;'
+}
+.objectContain {
+	width:100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: 50% 50%; 
+	font-family: 'object-fit: contain;object-position: 50% 50%;'
+}
+.point_reader{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+header{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	z-index: 55500;
+}
+.header_in{
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 95%;
+	max-width: 1680px;
+	margin-left: auto;
+	text-align: center;
+}
+.header_in h1{
+	font-weight: normal;
+	font-size: 1rem;
+	color: var(--pink_d);
+	padding: 0 1rem;
+}
+.header_in .head_cta{
+	display: flex;
+	height: 100%;
+}
+.header_in .head_cta_in{
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width:100%;
+	padding:0 1rem;
+}
+.header_in .head_cta_in span{
+	display: block;
+	white-space: nowrap;
+}
+.header_in .head_cta_in .ico{
+	font-size: 1.5rem;
+	margin-right: 1rem;
+}
+.header_in .head_cta_in .sub_txt{
+	font-size: 0.8rem;
+}
+.header_in .head_cta_in .main_txt{
+	font-weight: bold;
+}
+.header_in .tel{
+	background: linear-gradient(to right, #a870e8 0%, #f26cc1 100%);
+}
+.header_in .line{
+	background: linear-gradient(to right, #05cad1 0%, #44e724 100%);
+}
+.header_in .form{
+	background: linear-gradient(to right, #a870e8 0%, #f26cc1 100%);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top01{
+	
+}
+.top01_in{
+	background: url(../../img/lp/top01_02.png) center right / 60% auto no-repeat;
+	position: relative;
+	z-index: -1;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.top01_in::before,
+.top01_in::after{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	content: '';
+	z-index: -1;
+}
+.top01_in::before{ 
+	background: var(--pink_l);
+	transform: skew(-15deg);
+	transform-origin: top left;
+}
+.top01_in::after{
+	background: var(--pink_o);
+	transform: skew(15deg);
+	transform-origin: bottom right;
+}
+.top01_in .img{
+	margin-right: 10%;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
