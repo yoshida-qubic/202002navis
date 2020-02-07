@@ -5,12 +5,45 @@
 /* @media screen and (min-width:1026px) and ( max-width:1279px) {} */
 /* @media screen and (min-width:768px) and ( max-width:1025px) {} */
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ベース設定 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+@font-face {
+  font-family: 'NotoSansJP';
+	src: url('../font/lp/NotoSansJP-Black.otf') format('opentype');
+	font-weight: 900;
+}
+@font-face {
+  font-family: 'NotoSansJP';
+	src: url('../font/lp/NotoSansJP-Bold.otf') format('opentype');
+	font-weight: bold;
+}
+@font-face {
+  font-family: 'NotoSansJP';
+  src: url('../font/lp/NotoSansJP-Medium.otf') format('opentype');
+	font-weight: 500;
+}
+@font-face {
+  font-family: 'NotoSansJP';
+  src: url('../font/lp/NotoSansJP-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+@font-face {
+  font-family: 'NotoSansJP';
+	src: url('../font/lp/NotoSansJP-Light.otf') format('opentype');
+	font-weight: 300;
+}
+@font-face {
+  font-family: 'NotoSansJP';
+	src: url('../font/lp/NotoSansJP-Thin.otf') format('opentype');
+	font-weight: 100;
+}
+@font-face {
+  font-family: 'bebas';
+	src: url('../font/lp/Bebas-Regular.otf') format('opentype');
+}
 html{
 	color: #000;
 	font-size: 16px;
 	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
-	/*font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
-	/*font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
+	font-family: "NotoSansJP", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 	line-height: 1.8;
 }
 a{
@@ -76,7 +109,17 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.mincho{font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;}
+.bebas{font-family: 'bebas';}
+.sub_ttl{
+	font-size: 2rem;
+	margin-bottom: 4rem;
+	font-style: italic;
+}
+.sub_ttl span{
+	color: var(--pink_d);
+	font-size: 2.5rem;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -146,18 +189,17 @@ header{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top01{
-	
+	text-align: center;
 }
 .top01_in{
-	background: url(../../img/lp/top01_02.png) center right / 60% auto no-repeat;
+	background: url(../../img/lp/top01_03.png) center right /auto 100% no-repeat;
 	position: relative;
 	z-index: -1;
-	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -183,13 +225,101 @@ header{
 	transform-origin: bottom right;
 }
 .top01_in .img{
-	margin-right: 10%;
+	margin-right: 5%;
+}
+.top01 .box{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 1.2;
+}
+.top01 .txt02{
+	margin:3rem 0;
+}
+.top01 .txt01 .inner01 .main_txt,
+.top01 .txt01 .inner02,
+.top01 .txt02 .inner02 .main_txt,
+.top01 .txt03 .inner02 .main_txt,
+.top01 .box sup{
+	color: var(--pink_d);
+}
+.top01 .txt01 .inner01 .main_txt{
+	font-size: 7rem;
+}
+.top01 .txt02 .inner02,
+.top01 .txt03 .inner02{
+	letter-spacing: 5px;
+}
+.top01 .txt02 .inner02 .main_txt,
+.top01 .txt03 .inner02 .main_txt{
+	font-size: 10rem;
+	line-height: 0.8;
+}
+.top01 .box sup{
+	font-size: 1rem;
+}
+.top01 .att{
+	padding:1rem 0;
+}
+.top01 .att span{
+	color: var(--pink_d);
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top02{
+	text-align: center;
+	background: url(../../img/lp/top02_09.png) center / cover no-repeat;
+	padding:6rem 0;
+	font-weight: bold;
+}
+.top02 .top02_in{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-style: italic;
+	font-size: 2rem;
+	line-height: 0.9;
+}
+.top02 .box{
+	width: 23%;
+	position: relative;
+	max-width: 18rem;
+}
+.top02 .box .img{
+	margin:0 0 2rem;
+}
+.top02 .box .inner00{
+	position: absolute;
+	top:-8rem;
+	left: -3rem;
+	text-shadow: 3px 3px 3px #fff;
+	font-size: 3rem;
+}
+.top02 .box .inner00 .main_txt{
+	color: var(--pink_d);
+	font-size: 10rem;
+}
+.top02 .box .inner01{
+	font-size: 1.5rem;
+}
+.top02 .box .inner02{
+		letter-spacing: 5px;
+}
+.top02 .box .inner02 sup{
+	font-size: 0.8rem;
+	color: var(--pink_d);
+	font-weight: normal;
+}
+.top02 .box .inner02 .main_txt{
+	color: var(--pink_d);
+	font-size: 9rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
