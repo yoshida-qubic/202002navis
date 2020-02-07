@@ -42,9 +42,10 @@
 html{
 	color: #000;
 	font-size: 16px;
-	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
+	font-weight: bold;
 	font-family: "NotoSansJP", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 	line-height: 1.8;
+	text-align: center;
 }
 a{
 	color: #000;
@@ -84,6 +85,7 @@ section,
 :root{
 	--pink_d: #ee3970;
 	--pink_o: rgba(246,68,127,0.9);
+	--pink: #f981a8;
 	--pink_l: #ffb7cf;
 }
 .objectCover {
@@ -139,7 +141,6 @@ header{
 	width: 95%;
 	max-width: 1680px;
 	margin-left: auto;
-	text-align: center;
 }
 .header_in h1{
 	font-weight: normal;
@@ -170,9 +171,6 @@ header{
 .header_in .head_cta_in .sub_txt{
 	font-size: 0.8rem;
 }
-.header_in .head_cta_in .main_txt{
-	font-weight: bold;
-}
 .header_in .tel{
 	background: linear-gradient(to right, #a870e8 0%, #f26cc1 100%);
 }
@@ -193,9 +191,6 @@ header{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.top01{
-	text-align: center;
-}
 .top01_in{
 	background: url(../../img/lp/top01_03.png) center right /auto 100% no-repeat;
 	position: relative;
@@ -229,7 +224,6 @@ header{
 }
 .top01 .box{
 	font-style: italic;
-	font-weight: bold;
 	font-size: 2rem;
 	line-height: 1.2;
 }
@@ -268,10 +262,8 @@ header{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top02{
-	text-align: center;
 	background: url(../../img/lp/top02_09.png) center / cover no-repeat;
-	padding:6rem 0;
-	font-weight: bold;
+	padding:6rem 0 9rem;
 }
 .top02 .top02_in{
 	display: flex;
@@ -318,10 +310,138 @@ header{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+ .top03{
+	padding:6rem 0;
+}
+.top03 .att{
+	position: absolute;
+	background: var(--pink_d);
+	bottom:100%;
+	right:50%;
+	width: 50%;
+	padding: 0.5rem 3rem;
+	border-radius: 0 2rem 0 0;
+}
+.top03 .att p{
+	color: #fff;
+	font-size: 1.5rem;
+}
+.top03 .ttl{
+	position: relative;
+}
+.top03 .ttl h2::before,
+.top03 .ttl h2::after{
+	position: absolute;
+	content: '';
+	background: url(../../img/lp/top03_06.png) center center / contain no-repeat;
+	width:1.2rem;
+	height: 1.2rem;
+}
+.top03 .ttl h2::before{
+	top:20%;
+	left:50%;
+	transform: translate(-50%,-50%) translateX(10rem);
+}
+.top03 .ttl h2::after{
+	top:70%;
+	left:50%;
+	transform: translate(-50%,-50%)translateX(13.5rem);
+}
+.top03 .ttl img{
+	position: absolute;
+	width: 8rem;
+	bottom:90%;
+	left:50%;
+	transform: translate(-50%,0)translateX(13.5rem);
+}
+.top03_in{
+	display: flex;
+	justify-content: space-between;
+}
+.top03_in .item_l{
+	width: 60%;
+	position: relative;
+}
+.top03_in .box{
+	width: 38%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-between;
+}
+.top03_in .box .item{
+	width: 48%;
+	position: relative;
+}
+.top03_in .item_l::before,
+.top03_in .box .item::before{
+	position: absolute;
+	top:0;
+	left: 0;
+	width:0;
+	height: 0;
+	border:0.75rem solid transparent;
+	border-top: 0.75rem solid var(--pink_d);
+	border-left: 0.75rem solid var(--pink_d);
+	content: '';
+}
+.top03_in p{
+	position: absolute;
+	bottom: 1rem;
+	left:0%;
+	color: #fff;
+	background: var(--pink_d);
+	padding: 0.5rem 1rem;
+	transform: translate(0,50%) rotate(-5deg);
+	white-space: nowrap;
+	z-index: 10;
+}
+.top03_in .item_l p{
+	font-size: 1.2rem;
+	padding: 0.5rem 2rem;
+}
+.top03_in p.light{
+	background: var(--pink);
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top04{ 
+	background: url(../../img/lp/top02_09.png) center / cover no-repeat;
+	padding: 6rem 0;
+}
+.top04 h2{
+	background: url(../../img/lp/top04_01.png) center center / 30rem auto no-repeat;
+	font-size: 2rem;
+	line-height: 1.25;
+	padding: 0rem 0 1rem;
+}
+.top04 h2 span{
+		transform: rotate(-10deg);
+		display: inline-block;
+		/* transform-origin: 20% bottom; */
+		padding: 0 2rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+
+
+
 
