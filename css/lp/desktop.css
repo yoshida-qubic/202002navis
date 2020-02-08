@@ -415,23 +415,314 @@ header{
 	background: url(../../img/lp/top04_01.png) center center / 30rem auto no-repeat;
 	font-size: 2rem;
 	line-height: 1.25;
-	padding: 0rem 0 1rem;
+	padding: 0 0 1rem;
+	margin:0 0 3rem;
 }
 .top04 h2 span{
 		transform: rotate(-10deg);
 		display: inline-block;
-		/* transform-origin: 20% bottom; */
 		padding: 0 2rem;
 }
+.top04_in{
+	background: #fff;
+	border:0.25rem solid #f64f86;
+	padding:2rem 0 0.5rem;
+	width: 700px;
+	margin: 0 auto;
+}
+.top04_in h3{
+	color: #fff;
+	font-size: 2.5rem;
+	position: relative;
+	z-index: 10;
+	margin: 0 0 2rem;
+}
+.top04_in h3::before,
+.top04_in h3::after{
+	position: absolute;
+	content: '';
+}
+.top04_in h3::before{
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background: var(--pink_d);
+	width: calc(100% + 3.5rem);
+	height: 100%;
+	z-index: -1;
+}
+.top04_in h3::after{
+	top:100%;
+	left:-1.75rem;
+	border:0.75rem solid transparent;
+	border-right: 0.75rem solid #202c33;
+	border-top: 0.75rem solid #202c33;
+	width:0;
+	height: 0;
+	z-index: -10;
+}
+.top04_in p{
+	font-size: 2rem;
+	border-bottom: 3px solid var(--pink_d);
+	margin: 0.25rem 2rem 0;
+}
+.top04_in p span{
+	color: var(--pink_d);
+	font-size: 2.25rem;
+}
+.top04_in p.att{
+	font-size: 0.8rem;
+	border:none;
+	font-weight: normal;
+	padding:0.25rem 0;
+}
+ .top04 a{
+	 border-radius: 3rem;
+	 color: #fff;
+	 margin: 3rem auto 0;
+	 font-size: 1.5rem;
+	 padding: 0.5rem 2rem;
+	 width: 30rem;
+	 transition: .3s;
+	 position: relative;
+	 z-index: 50;
+ }
+ .top04 a::after,
+ .top04 a::before{
+	 position: absolute;
+	 top:50%;
+	 left:50%;
+	 width: 100%;
+	 height: 100%;
+	 transform:translate(-50%,-50%);
+	 content: '';
+	 border-radius: 3rem;
+	 z-index: -1;
+	 transition: .3s;
+	}
+	.top04 a::before{
+		background: var(--pink_d);
+ }
+	 .top04 a::after{
+	 background: linear-gradient(to right, #a870e8 0%, #f26cc1 100%);
+	 }
+  .top04 a:hover{
+		transform: translate(-0.75rem,-0.75rem);
+	}
+	.top04 a:hover::before{
+		transform:translate(-50%,-50%)translate(0.75rem,0.75rem);
+		z-index: -1;
+	 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top05{
+	padding:6rem 0;
+	background: #ffb7cf;
+	overflow: hidden;
+}
+.top05::before,
+.top05:after{
+	position: absolute;
+	top:0;
+	left:50%;
+	background: var(--pink_d);
+	content: '';
+	width: 50%;
+	height: 100%;
+}
+.top05::before{transform: skew(15deg);}
+.top05:after{transform: skew(-15deg);}
+.top05 .container{
+	z-index: 10;
+	position: relative;
+}
+.top05 h2{
+	font-size: 2rem;
+	font-style: italic;
+}
+.top05 h2 span{
+	font-size: 2.2rem;
+	color: #fff;
+}
+.top05 h3{
+	font-size: 2rem;
+	display: inline-block;
+	padding: 0.25rem 4rem;
+	margin: 2rem 0 1rem;
+	position: relative;
+	z-index: 10;
+}
+.top05 h3 span{
+	color: var(--pink_d);
+}
+.top05 h3::before{
+	background: #fff;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%) skew(-20deg);
+	content: '';
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.top05_in{
+	display: flex;
+	justify-content: center;
+	margin:3rem 0 0;
+}
+.top05_in .box{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 5rem;
+}
+.top05_in .box p{
+	font-size: 2rem;
+	margin: 0 0 1rem;
+}
+.top05_in .box img{
+	width: 13rem;
+}
+.top05 .item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:1rem 0 0;
+}
+.top05 .item p{
+	font-size: 2rem;
+	margin:0 2rem;
+	font-style: italic;
+	line-height: 1;
+}
+.top05 .item p .main_txt{
+	color: #fff;
+	font-size: 10rem;
+}
+.top05 .item p .sub_txt{
+	font-size: 5rem;
+}
+.top05 .item p sup{
+	font-size: 1rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top06 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top06{
+	padding: 6rem 0;
+}
+.top06 .ttl{
+	position: relative;
+}
+.top06 .ttl .point{
+	position: absolute;
+	top:0;
+	left:50%;
+	transform: translate(-50%,-50%) translateX(-24rem) rotate(-10deg);
+	font-size: 3rem;
+	line-height: 1;
+	background: var(--pink_l);
+	width: 10rem;
+	height: 10rem;
+display: flex;
+justify-content: center;
+align-items: center;
+	border-radius: 50%;
+}
+.top06 .ttl h2{
+	font-size: 2rem;
+	margin: 0 0 2rem;
+}
+.top06 .ttl h2 span{
+	font-size: 3rem;
+	display: block;
+	background: #000;
+	color: #fff;
+	width: 6rem;
+	height: 6rem;
+	line-height: 6rem;
+	border-radius: 50%;
+	margin: 1rem auto 0;
+	position: relative;
+}
+.top06 .ttl h2 span::before{
+	position: absolute;
+	top:95%;
+	left:50%;
+	transform: translate(-50%, 0);
+	width:0;
+	height: 0;
+	border:1rem solid transparent;
+	border-top: 1rem solid #000;
+	content: '';
+}
+.top06 .ttl h3{
+	font-size: 1.8rem;
+}
+.top06 .ttl .att{
+	font-size: 1.8rem;
+	display: inline-block;
+	padding:0.5rem 2rem;
+	font-style: italic;
+	color: #fff;
+	position: relative;
+}
+.top06 .ttl .att::before{
+	background: var(--pink_d);
+	top:0;
+	left:0;
+	transform:skew(-10deg);
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+.top06_in{
+	margin: 3rem 0;
+}
+.top06_in table{
+	margin: 0 auto;
+}
+.top06_in table th,
+.top06_in table td{
+	border: 2px solid #fff;
+	padding:0.5rem 1rem;
+}
+.top06_in table thead th{
+	font-size: 1.5rem;
+}
+.top06_in table .blue{
+	background: #cbeaf8;
+}
+.top06_in table .blue span{
+	color: #0072ff;
+}
+.top06_in table .pink{
+	background: #f6447f;
+	color: #fff;
+}
+.top06_in table .pink span{
+	color: #ffea00;
+}
+.top06_in table tbody th{
+	background: #fbc7d8;
+	font-size: 1.2rem;
+}
+.top06_in table tbody td{
+	text-align: left;
+}
+.top06_in p{
+	margin:3rem 0 0;
+	font-size: 1.5rem;
+}
+.top06_in p span{
+	color: var(--pink_d);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top06 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
