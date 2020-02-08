@@ -690,7 +690,7 @@ align-items: center;
 .top06_in table th,
 .top06_in table td{
 	border: 2px solid #fff;
-	padding:0.5rem 1rem;
+	padding:0.5rem 2rem;
 }
 .top06_in table thead th{
 	font-size: 1.5rem;
@@ -723,6 +723,116 @@ align-items: center;
 	color: var(--pink_d);
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top06 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top07 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top07{
+	background: var(--pink_d);
+	color: #fff;
+}
+.top07 .ttl{
+	padding: 6rem 0 0;
+	position: relative;
+}
+.top07 .ttl::before{
+	position: absolute;
+	top:2rem;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background: var(--pink_d);
+	content: '';
+	width: 18rem;
+	height: 10rem;
+	border-radius: 50%;
+	z-index: -1;
+}
+.top07 .ttl p{
+	position: relative;
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+.top07 .ttl p span{
+	height: 200px;
+	position: absolute;
+	width: 20px;
+	left: 50%;
+	top: -9rem;
+	transform-origin: bottom center;
+}
+.top07 .ttl p span:nth-of-type(1){ transform:translate(-50%,0) rotate(-25deg); }
+.top07 .ttl p span:nth-of-type(2){ transform:translate(-50%,0) rotate(-20deg); }
+.top07 .ttl p span:nth-of-type(3){ transform:translate(-50%,0) rotate(-15deg); }
+.top07 .ttl p span:nth-of-type(4){ transform:translate(-50%,0) rotate(-10deg); }
+.top07 .ttl p span:nth-of-type(5){ transform:translate(-50%,0) rotate(-5deg); }
+.top07 .ttl p span:nth-of-type(6){ transform:translate(-50%,0) rotate(0); }
+.top07 .ttl p span:nth-of-type(7){ transform:translate(-50%,0) rotate(5deg); }
+.top07 .ttl p span:nth-of-type(8){ transform:translate(-50%,0) rotate(10deg); }
+.top07 .ttl p span:nth-of-type(9){ transform:translate(-50%,0) rotate(15deg); }
+.top07 .ttl p span:nth-of-type(10){ transform:translate(-50%,0) rotate(20deg); }
+.top07 .ttl p span:nth-of-type(11){ transform:translate(-50%,0) rotate(25deg); }
+.top07 .ttl h2{
+	font-size: 2rem;
+}
+.top07_in{
+	margin:4rem 0 5rem;
+}
+.top07_in h3{
+	color: #fff;
+	font-size: 1.8rem;
+	position: relative;
+	display: inline-block;
+	padding:0.25rem 3rem;
+	z-index: 10;
+	margin:0 0 2rem;
+}
+.top07_in h3::before{
+	position: absolute;
+	background: #000;
+	z-index: -1;
+	content: '';
+	display: block;
+	width:100%;
+	height: 100%;
+	top:0;
+	left:0;
+	transform: skew(-15deg);
+}
+.top07_in .flexbox{
+	margin: 3rem 0 0;
+	display: flex;
+	justify-content: center;
+}
+.top07_in.first .flexbox .item{
+	width:20%;
+	margin:0 2rem;
+}
+.top07_in.first .flexbox .item .txt{
+	background: #fff;
+	padding:2rem;
+	border-radius: 0.5rem;
+	margin:2rem 0 0;
+}
+.top07_in.first .flexbox .item .txt p{
+	color: #000;
+	font-size: 1.5rem;
+}
+.top07_in.first .flexbox .item .txt p span{
+	color: var(--pink_d);
+}
+.top07_in.second .flexbox .item{
+	width:30%;
+}
+.top07_in.second .flexbox .item .txt{
+	padding: 0 2rem;
+	margin:2rem 0 0;
+}
+.top07_in.second .flexbox .item:nth-of-type(2) .txt{
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+}
+.top07_in.second .flexbox .item h4{
+	font-size: 1.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top07 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
