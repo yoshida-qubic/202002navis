@@ -18,7 +18,10 @@ const tabletwidth = 1025;
 
 $(function () {
 
-// JQueryの範囲
+	$('.top12_in dl dt').click(function () {
+		$(this).toggleClass('active');
+		$(this).next('dd').slideToggle();
+	});
 
 
 

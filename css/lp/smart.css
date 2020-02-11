@@ -1,17 +1,53 @@
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ベース設定 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+@font-face {
+  font-family: 'NotoSansJP';
+	src: url('../font/lp/NotoSansJP-Black.otf') format('opentype');
+	font-weight: 900;
+}
+@font-face {
+  font-family: 'NotoSansJP';
+	src: url('../font/lp/NotoSansJP-Bold.otf') format('opentype');
+	font-weight: bold;
+}
+@font-face {
+  font-family: 'NotoSansJP';
+  src: url('../font/lp/NotoSansJP-Medium.otf') format('opentype');
+	font-weight: 500;
+}
+@font-face {
+  font-family: 'NotoSansJP';
+  src: url('../font/lp/NotoSansJP-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+@font-face {
+  font-family: 'NotoSansJP';
+	src: url('../font/lp/NotoSansJP-Light.otf') format('opentype');
+	font-weight: 300;
+}
+@font-face {
+  font-family: 'NotoSansJP';
+	src: url('../font/lp/NotoSansJP-Thin.otf') format('opentype');
+	font-weight: 100;
+}
+@font-face {
+  font-family: 'bebas';
+	src: url('../font/lp/Bebas-Regular.otf') format('opentype');
+}
 body{-webkit-text-size-adjust: 100%;}
 html{
-	color: ;
-	font-size: ;
-	line-height: ;
-	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
-	/*font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
-	/*font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "NotoSansJP", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+	line-height: 1.8;
+	text-align: center;
+	counter-reset: stepnumber;
 	-webkit-text-size-adjust: 100%;
 }
 a{
-	color: ;
+	color: #000;
+	display: block;
 }
 #wrapper{
 	width: 100%;
@@ -31,6 +67,12 @@ section,
 }
 .is_pc{display: none;}
 .is_hidden_tab{display: none;}
+:root{
+	--pink_d: #ee3970;
+	--pink_o: rgba(246,68,127,0.9);
+	--pink: #f981a8;
+	--pink_l: #ffb7cf;
+}
 .objectCover {
 	width:100%;
 	height: 100%;
@@ -54,11 +96,48 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.mincho{font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;}
+.bebas{font-family: 'bebas';}
+.sub_ttl{
+	font-size: 2rem;
+	margin-bottom: 4rem;
+	font-style: italic;
+}
+.sub_ttl span{
+	color: var(--pink_d);
+	font-size: 2.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+header{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	z-index: 55500;
+}
+.header_in{
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1rem;
+}
+.header_in .logo{
+	width: 18%;
+}
+.header_in h1{
+	font-weight: normal;
+	font-size: 0.8rem;
+	color: var(--pink_d);
+	width: 80%;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -68,6 +147,76 @@ section,
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top01_in{
+	background: url(../../img/lp/top01_03.png) center right /auto 100% no-repeat;
+	position: relative;
+	z-index: -1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.top01_in::before,
+.top01_in::after{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	content: '';
+	z-index: -1;
+}
+.top01_in::before{ 
+	background: var(--pink_l);
+	transform: skew(-15deg);
+	transform-origin: top left;
+}
+.top01_in::after{
+	background: var(--pink_o);
+	transform: skew(15deg);
+	transform-origin: bottom right;
+}
+.top01_in .img{
+	margin-right: 5%;
+}
+.top01 .box{
+	font-style: italic;
+	font-size: 2rem;
+	line-height: 1.2;
+}
+.top01 .txt02{
+	margin:3rem 0;
+}
+.top01 .txt01 .inner01 .main_txt,
+.top01 .txt01 .inner02,
+.top01 .txt02 .inner02 .main_txt,
+.top01 .txt03 .inner02 .main_txt,
+.top01 .box sup{
+	color: var(--pink_d);
+}
+.top01 .txt01 .inner01 .main_txt{
+	font-size: 7rem;
+}
+.top01 .txt02 .inner02,
+.top01 .txt03 .inner02{
+	letter-spacing: 5px;
+}
+.top01 .txt02 .inner02 .main_txt,
+.top01 .txt03 .inner02 .main_txt{
+	font-size: 10rem;
+	line-height: 0.8;
+}
+.top01 .box sup{
+	font-size: 1rem;
+}
+.top01 .att{
+	padding:1rem 0;
+}
+.top01 .att span{
+	color: var(--pink_d);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 @media screen and (orientation:portrait) {/* 縦向き */}
 @media screen and (orientation:landscape) {/* 横向き */}
