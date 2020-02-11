@@ -217,6 +217,7 @@ footer{
 footer .copy{
 	background: #de2126;
 	padding:1rem 0;
+	font-weight: normal;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -288,6 +289,7 @@ footer .copy{
 }
 .top01 .att{
 	padding:1rem 0;
+	font-weight: normal;
 }
 .top01 .att span{
 	color: var(--pink_d);
@@ -362,6 +364,30 @@ footer .copy{
 }
 .top03 .ttl{
 	position: relative;
+	display: inline-block;
+}
+.top03 .ttl::before,
+.top03 .ttl::after{
+	position: absolute;
+	content: '';
+	background: #ffb7cf;
+	height: 1.2rem;
+	transform: translate(-50%,0);
+	left:50%;
+	z-index: -1;
+}
+.top03 .ttl::before{
+	bottom:70%;
+	width:75%;
+}
+.top03 .ttl::after{
+	bottom:35%;
+	
+	width:100%;
+}
+.top03 .ttl h2{
+	position: relative;
+
 }
 .top03 .ttl h2::before,
 .top03 .ttl h2::after{
@@ -553,7 +579,6 @@ footer .copy{
 .top05{
 	padding:6rem 0;
 	background: #ffb7cf;
-	overflow: hidden;
 }
 .top05::before,
 .top05:after{
@@ -574,10 +599,17 @@ footer .copy{
 .top05 h2{
 	font-size: 2rem;
 	font-style: italic;
+	position: relative;
 }
 .top05 h2 span{
 	font-size: 2.2rem;
 	color: #fff;
+}
+.top05 h2 img{
+	position: absolute;
+	bottom:100%;
+	left:70%;
+	z-index: 10;
 }
 .top05 h3{
 	font-size: 2rem;
@@ -910,7 +942,6 @@ align-items: center;
 	min-width: 200px;
 }
 .top07_in.third .flexbox .item .txt{
-	/* width: 40%; */
 	display: inline-block;
 }
 .top07_in.third .flexbox .item .txt h4{
